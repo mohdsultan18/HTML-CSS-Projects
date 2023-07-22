@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: vardana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f582a7;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin: 0 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px 1px rgba(255, 255, 255, 0.5);
+    transition: transform 0.5s;
+}
+
+a i {
+    font-size: 35px;
+    color: #000;
+    transition: transform 0.5s;
+}
+
+a:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.5),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 0.1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    0px 12px 10px -10px rgba(0,0, 0, 0.5);
+    transform: translateY(2px);
+}
+
+a:hover i{
+    transform: scale(0.90);
+}
+
+a:hover .fa-facebook{
+    color: #3b5999;
+}
+
+a:hover .fa-whatsapp{
+    color: #4fce5d;
+}
+
+a:hover .fa-twitter{
+    color: #00acee;
+}
+
+a:hover .fa-youtube{
+    color: #f00;
+}
+
+a:hover .fa-instagram{
+    color: #f14843;
+}
+
+.colors{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background: #e3eded;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.colors span{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: var(--clr);
+    margin: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+
+.colors span .active{
+    border: 1px solid #333;
+    scale: 1.5;
+}
