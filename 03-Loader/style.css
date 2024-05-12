@@ -25,6 +25,34 @@ section .dots span{
     opacity: 0;
 }
 
+footer {
+    background-color: #4070f4;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    gap: .5em;
+}
+
+footer .socials {
+    display: flex;
+    gap: .5em;
+}
+
+.fa:hover {
+    opacity: 0.7;
+  }
+  
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-twitter {
+    color: white;
+  }
+
 @keyframes animate {
  0%{
    opacity: 1;
