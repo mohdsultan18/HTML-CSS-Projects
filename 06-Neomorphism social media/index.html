@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/21a93a3357.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/21a93a3357.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Neomorphism social media icon and switch color change</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="social-media">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
     </div>
     <div class="colors">
-        <span class="active" onclick="changeColor('#F582A7')" style="--clr: #F582A7;" ></span>
-        <span onclick="changeColor('#FFDEDE')"  style="--clr: #FFDEDE;" ></span>
-        <span onclick="changeColor('#E4A5FF')"  style="--clr: #E4A5FF;" ></span>
-        <span onclick="changeColor('#B9E9FC')"  style="--clr: #B9E9FC;" ></span>
-        <span onclick="changeColor('#7FE9DE')"  style="--clr: #7FE9DE;" ></span>
+      <span
+        class="active"
+        onclick="changeColor('#F582A7')"
+        style="--clr: #f582a7"
+      ></span>
+      <span onclick="changeColor('#FFDEDE')" style="--clr: #ffdede"></span>
+      <span onclick="changeColor('#E4A5FF')" style="--clr: #e4a5ff"></span>
+      <span onclick="changeColor('#B9E9FC')" style="--clr: #b9e9fc"></span>
+      <span onclick="changeColor('#7FE9DE')" style="--clr: #7fe9de"></span>
     </div>
 
     <script>
-        function changeColor(color) {
-            document.body.style.background = color;
+      function changeColor(color) {
+        document.body.style.background = color;
 
-            document.querySelectorAll('span').forEach(function (item) {
-                item.classList.remove('active');
-            });
-            event.target.classList.add('active');
-        }
+        document.querySelectorAll("span").forEach(function (item) {
+          item.classList.remove("active");
+        });
+        event.target.classList.add("active");
+      }
     </script>
-</body>
+  </body>
 </html>
